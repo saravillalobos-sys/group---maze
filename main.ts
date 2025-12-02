@@ -1,5 +1,5 @@
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.rock1, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`level3`)
+    tiles.setCurrentTilemap(tilemap`level4`)
     tiles.placeOnRandomTile(mySprite, sprites.castle.shrub)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairWest, function (sprite, location) {
