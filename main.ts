@@ -1,18 +1,18 @@
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.rock1, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`level5`)
-    tiles.placeOnRandomTile(mySprite, assets.tile`myTile8`)
-})
-scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairWest, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`level14`)
-    tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairLadder)
-})
-scene.onOverlapTile(SpriteKind.Player, sprites.castle.saplingOak, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level3`)
     tiles.placeOnRandomTile(mySprite, sprites.castle.rock2)
 })
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairWest, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`level14`)
+    tiles.placeOnRandomTile(mySprite, sprites.builtin.coral0)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.castle.shrub, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`level5`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile8`)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.rock2, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level4`)
-    tiles.placeOnRandomTile(mySprite, sprites.castle.rock1)
+    tiles.placeOnRandomTile(mySprite, sprites.castle.tilePath4)
 })
 let mySprite: Sprite = null
 mySprite = sprites.create(img`
